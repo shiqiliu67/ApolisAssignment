@@ -239,7 +239,7 @@ public static void mergeSortWithNewList(Node n1, Node n2) throws IOException {
 	ln.createfirstNode(n1.data);
 	Node temp = n1.next;
 	while(temp!=null && n2!=null) {
-		if(n2.data<n1.data) {
+		if(n2.data<temp.data) {
 			ln.createRestNode(n2.data);
 			n2=n2.next;
 			}
@@ -537,7 +537,7 @@ After sorting two list are:
 5	150	550	
 60	160	660	
 Merge two sorted linked list into third new list
-5	150	550	60	160	660	
+5	60	150	160	550	660	
 =========================Q9=================================
 merge two two linked list without third new list
 5	60	150	160	550	660	
