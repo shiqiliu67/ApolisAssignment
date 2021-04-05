@@ -504,3 +504,62 @@ ll.reverseOrder();
 System.out.println("\n=========================END=================================");
 }
 }
+
+/*
+ *
+=========================START=================================
+70	5	20	17	9	54	
+=========================Q1=================================
+Not find the element.
+Search element successful! 54 is in 6 position.
+=========================Q2=================================
+Q2 After sorting linkedlist : 
+5	9	17	20	54	70	
+=========================Q3=================================
+Q3 Reseve linkedlist : 
+70	54	20	17	9	5	
+=========================Q4=================================
+Concatenate two lists with creating third linked list
+10	33	20	67	89	30	130	330	230	3	
+=========================Q5=================================
+Concatenate two lists without creating third linked list
+10	33	20	67	89	30	130	330	230	3	
+=========================Q6=================================
+30	130	330	230	3	
+40	140	440	440	44	
+Merge two linked list into third new list
+30	40	130	140	330	440	230	440	3	44	
+=========================Q7=================================
+merge two linked list without third new list
+30	40	130	140	330	440	230	440	3	44	
+=========================Q8=================================
+After sorting two list are: 
+5	150	550	
+60	160	660	
+Merge two sorted linked list into third new list
+5	150	550	60	160	660	
+=========================Q9=================================
+merge two two linked list without third new list
+5	60	150	160	550	660	
+=========================Q10=================================
+Q10 Enter the data which you want to delete
+Not find the element.
+Search element successful! 5 is in 1 position.
+Delete successful!
+
+After deleting the node : 
+9	17	20	54	70	
+=========================Q11=================================
+Q11 find smallest and greates element from the linked list
+
+Min element is : 9
+
+Max element is : 70
+=========================Q12=================================
+Q12 Before reverse order the list is: 
+9	17	20	54	70	
+    After reverse order the list is: 
+70	54	20	17	9	
+=========================END=================================
+*
+*/
