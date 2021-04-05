@@ -185,15 +185,15 @@ public static void mergeWithNewList(Node n1, Node n2) throws IOException {
 	if(n2==null) {
 		while(n1!=null) {
 			ln.createRestNode(n1.data);
-			System.out.print(n1.data+"\t");
+		//	System.out.print(n1.data+"\t");
 			n1 = n1.next;
 		}
 
 	}
-	if(n1==null) {
+	if(temp==null) {
 		while(n2!=null) {
 			ln.createRestNode(n2.data);
-			System.out.print(n2.data+"\t");
+			//System.out.print(n2.data+"\t");
 			n2 = n2.next;
 		}
 	}
@@ -250,15 +250,15 @@ public static void mergeSortWithNewList(Node n1, Node n2) throws IOException {
 	if(n2==null) {
 		while(n1!=null) {
 			ln.createRestNode(n1.data);
-			System.out.print(n1.data+"\t");
+		//	System.out.print(n1.data+"\t");
 			n1 = n1.next;
 		}
 
 	}
-	if(n1==null) {
+	if(temp==null) {   //fix here, temp=n1.null, origin code is n1==null, in this method, n1 has data,n1.next=temp, we need to loop temp.
 		while(n2!=null) {
 			ln.createRestNode(n2.data);
-			System.out.print(n2.data+"\t");
+			//System.out.print(n2.data+"\t");
 			n2 = n2.next;
 		}
 	}
@@ -284,7 +284,7 @@ public static void mergeSortWithOutNewList(Node n1, Node n2) {
 	Node temp = n1;
 	Node head = temp;
     n1 = n1.next;
-    head = head.next;
+   
 	while(n1!=null && n2!=null) {
 		if(n1.data>n2.data) {
 			temp.next=n2;
@@ -302,6 +302,8 @@ public static void mergeSortWithOutNewList(Node n1, Node n2) {
 	if(n2==null) {
 		temp.next = n1;
 	}
+	 //System.out.print(head.data+"\t");
+	 //head = head.next;
 	 while(head != null) {
          System.out.print(head.data+"\t");
          head = head.next;
